@@ -1,0 +1,13 @@
+{
+  "name": "coris-api-validators",
+  "version": "1.0.0",
+  "description": "",
+  "main": "main.js",
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "bee-queue": "^1.2.2",
+    "ioredis": "^4.11.2"
+  }
+}

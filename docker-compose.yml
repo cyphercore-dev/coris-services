@@ -1,0 +1,33 @@
+version: '3.5'
+services:
+  manager-service:
+    image: manager-service
+    build: 
+      context: ./services/manager
+    network_mode: host
+    restart: always
+    depends_on:
+      - redis
+
+  rest-service:
+    image: rest-service
+    build: 
+      context: ./services/rest
+    network_mode: host
+    restart: always
+    depends_on:
+      - redis
+    
+  validators-service:
+    image: validators-service
+    build: 
+      context: ./services/validators
+    network_mode: host
+    restart: always
+    depends_on:
+      - redis
+
+  redis:
+    image: redis:alpine
+    network_mode: host
+    restart: always

@@ -1,0 +1,14 @@
+{
+  "name": "coris-api-rest",
+  "version": "1.0.0",
+  "description": "",
+  "main": "fetch.js",
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.1",
+    "ioredis": "^4.11.2",
+    "cors": "^2.8.5"
+  }
+}
